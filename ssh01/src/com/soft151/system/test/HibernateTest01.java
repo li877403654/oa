@@ -14,10 +14,12 @@ public class HibernateTest01 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		getUser();
+		getUser2();
 	}
-
-
+	public static void getUser2(){
+		System.out.println("가가가가가가가가가가가가가가가가가");
+	}
+	
 	public static void getUser() {
 		//		SessionFactory sessionFactory = MySessionFactory.getSessionFactory();
 		//		Session session = sessionFactory.openSession();
