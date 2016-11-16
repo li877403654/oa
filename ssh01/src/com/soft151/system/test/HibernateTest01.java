@@ -14,15 +14,20 @@ public class HibernateTest01 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-//		SessionFactory sessionFactory = MySessionFactory.getSessionFactory();
-//		Session session = sessionFactory.openSession();
-		Configuration configuration = new Configuration().configure();
-		SessionFactory sessionFactory = configuration.buildSessionFactory();
-		Session session = sessionFactory.openSession();
-		//Transaction ts = session.beginTransaction();
-		UserInfo userInfo = (UserInfo) session.load(UserInfo.class,"1");
-		System.out.println(userInfo.getUsername());
-		session.close();
+		getUser();
+	}
+
+
+	public static void getUser() {
+		//		SessionFactory sessionFactory = MySessionFactory.getSessionFactory();
+		//		Session session = sessionFactory.openSession();
+				Configuration configuration = new Configuration().configure();
+				SessionFactory sessionFactory = configuration.buildSessionFactory();
+				Session session = sessionFactory.openSession();
+				//Transaction ts = session.beginTransaction();
+				UserInfo userInfo = (UserInfo) session.load(UserInfo.class,"1");
+				System.out.println(userInfo.getUsername());
+				session.close();
 	}
 
 	
