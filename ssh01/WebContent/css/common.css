@@ -1,0 +1,21 @@
+﻿.imgBtn {
+	 border:0px;
+	 cursor:pointer;
+	 width:20px;
+	 height:20px;
+}
+input[type="text"],textarea,select,input[type="password"] {
+	 border: 1px solid #2598d5;
+	 font-size: 12px;
+	 color: #002d71;
+}
+.btn {
+	 background:url(../image/common/btn.gif) repeat-x;
+	 background-position:0px -96px;
+	 border:1px solid #72a1bd;
+	 color:#333333;
+	 cursor:pointer;
+	 line-height:26px;
+	 padding:0px 11px 0px 11px;
+	 height:26px;
+}

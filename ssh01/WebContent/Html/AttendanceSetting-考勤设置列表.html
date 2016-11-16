@@ -1,0 +1,483 @@
+﻿
+
+<!DOCTYPE html>
+
+<head>
+    <title>
+        考勤设置
+    </title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-1.4.1.js" type="text/javascript"></script>
+    <script src="../js/SVSE.UI.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        select {
+            width: 54px;
+        }
+    </style>
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="#" id="aspnetForm">      
+        <div class="divTop">
+            <img alt="" src="../image/main/logo.png" style="float:left;" />
+            <img alt="" src="../image/main/join.gif" style="float:left;position:relative; top:49px;" />
+            <div class="menu">
+
+                <a id="ctl00_Menu1_Repeater1_ctl00_hyl" href="#" target="_self">
+                    <div>用户管理</div>
+                </a>
+
+                <a id="ctl00_Menu1_Repeater1_ctl01_hyl" href="#" target="_self">
+                    <div>部门管理</div>
+                </a>
+
+                <a id="ctl00_Menu1_Repeater1_ctl02_hyl" href="#" target="_self">
+                    <div>考勤设置</div>
+                </a>
+
+            </div>
+            <div class="divLnk">
+                <img alt="" src="../image/main/help.png" width="16px" height="16px" />
+                <a href="javascript:dialog.show('PersonalInfo.aspx','个人信息',460,240);void 0;">个人信息</a>
+                <img alt="" src="image/main/off.jpg" width="16px" height="16px" />
+                <a id="ctl00_lnkExit" href="#">退出</a>
+            </div>
+        </div>
+        <div class="divCurrent">
+            <img src="../image/main/cube.gif" alt="" />
+            <span>当前位置：考勤设置</span>
+        </div>
+        <div class="main">
+            <div class="mainTitle"></div>
+
+            <table align="center">
+                <tr>
+                    <td>
+                        <select name="ctl00$ContentPlaceHolder1$ddlYear" id="ctl00_ContentPlaceHolder1_ddlYear">
+                            <option selected="selected" value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+
+                        </select>
+                    </td>
+                    <td>年</td>
+                    <td>
+                        <select name="ctl00$ContentPlaceHolder1$ddlMonth" id="ctl00_ContentPlaceHolder1_ddlMonth">
+                            <option selected="selected" value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+
+                        </select>
+                    </td>
+                    <td>月</td>
+                    <td>
+                        <input type="button" name="ctl00$ContentPlaceHolder1$btnShow" value="显示" id="ctl00_ContentPlaceHolder1_btnShow" class="btn" />
+                    </td>
+                    <td>
+                        <input type="button" name="ctl00$ContentPlaceHolder1$btnSave" value="保存" id="ctl00_ContentPlaceHolder1_btnSave" class="btn" />
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <div>
+                <table class="grid" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_GridView1" style="border-collapse:collapse;">
+                    <tr>
+                        <th scope="col">日期</th>
+                        <th scope="col">星期</th>
+                        <th scope="col">状态</th>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-01</td>
+                        <td style="width:30%;">星期五</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl02$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl02_ddlStatus" date="2016/01/01 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-02</td>
+                        <td style="width:30%;">星期六</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl03$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl03_ddlStatus" date="2016/01/02 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-03</td>
+                        <td style="width:30%;">星期日</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl04$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl04_ddlStatus" date="2016/01/03 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-04</td>
+                        <td style="width:30%;">星期一</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl05$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl05_ddlStatus" date="2016/01/04 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-05</td>
+                        <td style="width:30%;">星期二</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl06$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl06_ddlStatus" date="2016/01/05 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-06</td>
+                        <td style="width:30%;">星期三</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl07$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl07_ddlStatus" date="2016/01/06 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-07</td>
+                        <td style="width:30%;">星期四</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl08$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl08_ddlStatus" date="2016/01/07 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-08</td>
+                        <td style="width:30%;">星期五</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl09$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl09_ddlStatus" date="2016/01/08 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-09</td>
+                        <td style="width:30%;">星期六</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl10$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl10_ddlStatus" date="2016/01/09 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-10</td>
+                        <td style="width:30%;">星期日</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl11$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl11_ddlStatus" date="2016/01/10 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-11</td>
+                        <td style="width:30%;">星期一</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl12$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl12_ddlStatus" date="2016/01/11 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-12</td>
+                        <td style="width:30%;">星期二</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl13$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl13_ddlStatus" date="2016/01/12 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-13</td>
+                        <td style="width:30%;">星期三</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl14$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl14_ddlStatus" date="2016/01/13 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-14</td>
+                        <td style="width:30%;">星期四</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl15$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl15_ddlStatus" date="2016/01/14 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-15</td>
+                        <td style="width:30%;">星期五</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl16$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl16_ddlStatus" date="2016/01/15 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-16</td>
+                        <td style="width:30%;">星期六</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl17$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl17_ddlStatus" date="2016/01/16 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-17</td>
+                        <td style="width:30%;">星期日</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl18$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl18_ddlStatus" date="2016/01/17 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-18</td>
+                        <td style="width:30%;">星期一</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl19$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl19_ddlStatus" date="2016/01/18 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-19</td>
+                        <td style="width:30%;">星期二</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl20$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl20_ddlStatus" date="2016/01/19 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-20</td>
+                        <td style="width:30%;">星期三</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl21$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl21_ddlStatus" date="2016/01/20 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-21</td>
+                        <td style="width:30%;">星期四</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl22$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl22_ddlStatus" date="2016/01/21 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-22</td>
+                        <td style="width:30%;">星期五</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl23$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl23_ddlStatus" date="2016/01/22 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-23</td>
+                        <td style="width:30%;">星期六</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl24$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl24_ddlStatus" date="2016/01/23 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-24</td>
+                        <td style="width:30%;">星期日</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl25$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl25_ddlStatus" date="2016/01/24 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-25</td>
+                        <td style="width:30%;">星期一</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl26$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl26_ddlStatus" date="2016/01/25 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-26</td>
+                        <td style="width:30%;">星期二</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl27$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl27_ddlStatus" date="2016/01/26 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-27</td>
+                        <td style="width:30%;">星期三</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl28$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl28_ddlStatus" date="2016/01/27 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-28</td>
+                        <td style="width:30%;">星期四</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl29$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl29_ddlStatus" date="2016/01/28 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-29</td>
+                        <td style="width:30%;">星期五</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl30$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl30_ddlStatus" date="2016/01/29 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-30</td>
+                        <td style="width:30%;">星期六</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl31$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl31_ddlStatus" date="2016/01/30 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;">2016-01-31</td>
+                        <td style="width:30%;">星期日</td>
+                        <td style="width:20%;">
+                            <select name="ctl00$ContentPlaceHolder1$GridView1$ctl32$ddlStatus" id="ctl00_ContentPlaceHolder1_GridView1_ctl32_ddlStatus" date="2016/01/31 0:00:00">
+                                <option selected="selected" value="0" style="color:Black;">默认</option>
+                                <option value="1" style="color:Green;">上班</option>
+                                <option value="2" style="color:Red;">休假</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </form>
+    <div class="divBottom">
+        <span>当前用户：管理员</span>
+        <span style="margin-left:20px;">用户类型：管理员</span>
+        <span style="margin-right:5px; float:right;">协同办公管理平台 —— 考勤子系统</span>
+    </div>
+</body>
+
+

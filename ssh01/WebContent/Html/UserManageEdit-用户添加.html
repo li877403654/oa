@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title>
+	<link href="../css/dialog.css" rel="stylesheet" type="text/css" />
+	<link href="../css/common.css" rel="stylesheet" type="text/css" />
+	<script src="../js/jquery-1.4.1.js" type="text/javascript"></script>
+	<script src="../js/SVSE.UI.js" type="text/javascript"></script>
+    
+	<style type="text/css">
+		input[type="text"],select {
+			 width:180px;
+		}
+	</style>	
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="UserEdit.aspx?type=add&amp;0.20835122711734344" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTE3MDg0MTY0Mw9kFgJmD2QWAgIDD2QWAgIBD2QWAgIHDxAPFgYeDkRhdGFWYWx1ZUZpZWxkBQZEZXB0SUQeDURhdGFUZXh0RmllbGQFCERlcHROYW1lHgtfIURhdGFCb3VuZGdkEBUHCeivt+mAieaLqQ/ntKDotKjmi5PlsZXpg6gM5a6e6K6t5Lit5b+DDOaZr+WugeS6uuWKmwnnnaPlr7zpg6gS5q2m6L2v5YWx5bu65a2m6ZmiD+WQjuWLpOeuoeeQhumDqBUHAAExATIBMwE0ATUBNhQrAwdnZ2dnZ2dnZGRkKhidt5BZBnsF7OAmZ3wM/S73aEI=" />
+</div>
+
+
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ABF0E50F" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWDwLNwfGOCALpx4PXCQK0w7i7DQLkrourCgL0waHFBgLrwaHFBgLJsI6OBwLG36TgCwLH36TgCwLE36TgCwLF36TgCwLC36TgCwLD36TgCwLwrKmsAQKokaLfChpMPBVHv/bXJ/4qxq8bmg+ZE6jD" />
+</div>
+        
+	<table width="80%" align="center">
+		<tr>
+			<td class="tdLeft"><span class="required">*</span>用户ID：</td>
+			<td class="tdRight">
+				<input name="ctl00$ContentPlaceHolder1$txtUserID" type="text" id="ctl00_ContentPlaceHolder1_txtUserID" />
+			</td>
+		</tr>
+		<tr>
+			<td class="tdLeft"><span class="required">*</span>用户姓名：</td>
+			<td class="tdRight">
+				<input name="ctl00$ContentPlaceHolder1$txtName" type="text" id="ctl00_ContentPlaceHolder1_txtName" />
+			</td>
+		</tr>
+		<tr>
+			<td class="tdLeft"><span class="required">*</span>用户类型：</td>
+			<td class="tdRight">
+				<select name="ctl00$ContentPlaceHolder1$ddlType" id="ctl00_ContentPlaceHolder1_ddlType">
+	<option value="">请选择</option>
+	<option value="0">员工</option>
+	<option value="1">主管</option>
+
+</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="tdLeft">所属部门：</td>
+			<td class="tdRight">
+				<select name="ctl00$ContentPlaceHolder1$ddlDept" id="ctl00_ContentPlaceHolder1_ddlDept">
+	<option value="">请选择</option>
+	<option value="1">素质拓展部</option>
+	<option value="2">实训中心</option>
+	<option value="3">景宁人力</option>
+	<option value="4">督导部</option>
+	<option value="5">武软共建学院</option>
+	<option value="6">后勤管理部</option>
+
+</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="tdLeft">手机：</td>
+			<td class="tdRight">
+				<input name="ctl00$ContentPlaceHolder1$txtCellphone" type="text" id="ctl00_ContentPlaceHolder1_txtCellphone" />
+			</td>
+		</tr>
+	</table>
+	<div class="centerDiv">
+		<input type="submit" name="ctl00$ContentPlaceHolder1$btnSave" value="保存" onclick="return save();" id="ctl00_ContentPlaceHolder1_btnSave" class="btn" />
+		<input type="button" value="取消" class="btn" onclick="parent.dialog.close();" />
+	</div>
+
+    </form>
+</body>
+</html>

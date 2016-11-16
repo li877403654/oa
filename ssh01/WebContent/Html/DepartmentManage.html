@@ -1,0 +1,192 @@
+﻿
+
+<!DOCTYPE html>
+
+<head>
+    <title>
+        部门管理
+    </title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-1.4.1.js" type="text/javascript"></script>
+    <script src="../js/SVSE.UI.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="#" id="aspnetForm">         
+        <div class="divTop">
+            <img alt="" src="../image/main/logo.png" style="float:left;" />
+            <img alt="" src="../image/main/join.gif" style="float:left;position:relative; top:49px;" />
+            <div class="menu">
+
+                <a id="ctl00_Menu1_Repeater1_ctl00_hyl" href="#" target="_self">
+                    <div>用户管理</div>
+                </a>
+
+                <a id="ctl00_Menu1_Repeater1_ctl01_hyl" href="#" target="_self">
+                    <div>部门管理</div>
+                </a>
+
+                <a id="ctl00_Menu1_Repeater1_ctl02_hyl" href="#" target="_self">
+                    <div>考勤设置</div>
+                </a>
+
+            </div>
+            <div class="divLnk">
+                <img alt="" src="../image/main/help.png" width="16px" height="16px" />
+                <a href="javascript:dialog.show('PersonalInfo.aspx','个人信息',460,240);void 0;">个人信息</a>
+                <img alt="" src="../image/main/off.jpg" width="16px" height="16px" />
+                <a id="ctl00_lnkExit" href="#">退出</a>
+            </div>
+        </div>
+        <div class="divCurrent">
+            <img src="../image/main/cube.gif" alt="" />
+            <span>当前位置：部门管理</span>
+        </div>
+        <div class="main">
+            <div class="mainTitle"></div>
+
+            <table align="center">
+                <tr>
+                    <td>部门名称：</td>
+                    <td>
+                        <input name="ctl00$ContentPlaceHolder1$txtDeptName" type="text" id="ctl00_ContentPlaceHolder1_txtDeptName" style="width:160px;" />
+                    </td>
+                    <td>主管：</td>
+                    <td>
+                        <select name="ctl00$ContentPlaceHolder1$ddlManager" id="ctl00_ContentPlaceHolder1_ddlManager" style="width:160px;">
+                            <option selected="selected" value="">请选择</option>
+                            <option value="1005                ">龚浩</option>
+                            <option value="1030                ">王艳</option>
+                            <option value="3009                ">王鹏</option>
+                            <option value="3026                ">钱欢</option>
+
+                        </select>
+                    </td>
+                    <td>
+                        <input type="image" name="ctl00$ContentPlaceHolder1$btnSearch" id="ctl00_ContentPlaceHolder1_btnSearch" src="../image/common/btnSearch.gif" style="border-width:0px;" />
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <div class="gridTopDiv">
+                <input type="button" class="btn" value="添加" onclick="add();" />
+            </div>
+            <div>
+                <table class="grid" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_GridView1" style="border-collapse:collapse;">
+                    <tr>
+                        <th scope="col">序号</th>
+                        <th scope="col">部门名称</th>
+                        <th scope="col">主管</th>
+                        <th scope="col">&nbsp;</th>
+                    </tr>
+                    <tr>
+                        <td style="width:10%;">
+                            <span id="ctl00_ContentPlaceHolder1_GridView1_ctl02_lblNo">1</span>
+                        </td>
+                        <td style="width:30%;">素质拓展部</td>
+                        <td style="width:20%;">&nbsp;</td>
+                        <td style="width:20%;">
+                            <img alt="编辑" title="编辑" src="../image/common/edit.png" class="imgBtn" onclick="editDept('1');" />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:10%;">
+                            <span id="ctl00_ContentPlaceHolder1_GridView1_ctl03_lblNo">2</span>
+                        </td>
+                        <td style="width:30%;">实训中心</td>
+                        <td style="width:20%;">王鹏</td>
+                        <td style="width:20%;">
+                            <img alt="编辑" title="编辑" src="../image/common/edit.png" class="imgBtn" onclick="editDept('2');" />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:10%;">
+                            <span id="ctl00_ContentPlaceHolder1_GridView1_ctl04_lblNo">3</span>
+                        </td>
+                        <td style="width:30%;">景宁人力</td>
+                        <td style="width:20%;">&nbsp;</td>
+                        <td style="width:20%;">
+                            <img alt="编辑" title="编辑" src="../image/common/edit.png" class="imgBtn" onclick="editDept('3');" />
+                            <input type="image" name="ctl00$ContentPlaceHolder1$GridView1$ctl04$btnDelete" id="ctl00_ContentPlaceHolder1_GridView1_ctl04_btnDelete" title="删除" class="imgBtn" src="../image/common/delete.png" style="border-width:0px;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:10%;">
+                            <span id="ctl00_ContentPlaceHolder1_GridView1_ctl05_lblNo">4</span>
+                        </td>
+                        <td style="width:30%;">督导部</td>
+                        <td style="width:20%;">王艳</td>
+                        <td style="width:20%;">
+                            <img alt="编辑" title="编辑" src="../image/common/edit.png" class="imgBtn" onclick="editDept('4');" />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:10%;">
+                            <span id="ctl00_ContentPlaceHolder1_GridView1_ctl06_lblNo">5</span>
+                        </td>
+                        <td style="width:30%;">武软共建学院</td>
+                        <td style="width:20%;">&nbsp;</td>
+                        <td style="width:20%;">
+                            <img alt="编辑" title="编辑" src="../image/common/edit.png" class="imgBtn" onclick="editDept('5');" />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:10%;">
+                            <span id="ctl00_ContentPlaceHolder1_GridView1_ctl07_lblNo">6</span>
+                        </td>
+                        <td style="width:30%;">后勤管理部</td>
+                        <td style="width:20%;">龚浩</td>
+                        <td style="width:20%;">
+                            <img alt="编辑" title="编辑" src="../image/common/edit.png" class="imgBtn" onclick="editDept('6');" />
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="dataPagerDiv">
+
+                <table>
+                    <tr>
+                        <td>
+                            <input type="image" name="ctl00$ContentPlaceHolder1$dataPager1$ibtnBegin" id="ctl00_ContentPlaceHolder1_dataPager1_ibtnBegin" title="首页" src="../image/DataPager/begin.gif" onclick="return false;" style="border-width:0px;cursor:default;" />
+                        </td>
+                        <td>
+                            <input type="image" name="ctl00$ContentPlaceHolder1$dataPager1$ibtnLast" id="ctl00_ContentPlaceHolder1_dataPager1_ibtnLast" title="上一页" src="../image/DataPager/last.gif" onclick="return false;" style="border-width:0px;cursor:default;" />
+                        </td>
+                        <td>
+                            <select name="ctl00$ContentPlaceHolder1$dataPager1$ddlList"  id="ctl00_ContentPlaceHolder1_dataPager1_ddlList" style="width:48px;">
+                                <option selected="selected" value="1">1</option>
+
+                            </select>
+                        </td>
+                        <td>
+                            <input type="image" name="ctl00$ContentPlaceHolder1$dataPager1$ibtnNext" id="ctl00_ContentPlaceHolder1_dataPager1_ibtnNext" title="下一页" src="../image/DataPager/next.gif" onclick="return false;" style="border-width:0px;cursor:default;" />
+                        </td>
+                        <td>
+                            <input type="image" name="ctl00$ContentPlaceHolder1$dataPager1$ibtnEnd" id="ctl00_ContentPlaceHolder1_dataPager1_ibtnEnd" title="尾页" src="../image/DataPager/end.gif" onclick="return false;" style="border-width:0px;cursor:default;" />
+                        </td>
+                        <td style="font-size:12px;">
+                            页数：1
+                        </td>
+                        <td style="font-size:12px;">
+                            总记录数：6
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </form>
+    <div class="divBottom">
+        <span>当前用户：管理员</span>
+        <span style="margin-left:20px;">用户类型：管理员</span>
+        <span style="margin-right:5px; float:right;">协同办公管理平台 —— 考勤子系统</span>
+    </div>
+</body>
+
+

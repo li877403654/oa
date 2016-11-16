@@ -1,0 +1,45 @@
+﻿.calendar {
+	margin:auto;
+	border-color: #bbd3eb;
+	border-collapse: collapse;
+}
+.calendar thead, .calendar th {
+	height: 26px;
+	text-align: center;
+	background-image: url(../image/main/grid-head.gif);
+}
+.calendar td {
+	 height:70px;
+	 width:100px;
+	 border-color: #bbd3eb;
+}
+.calendar td .left {
+	 float:left;
+	 font-size:22px;
+	 font-weight:bolder;
+	 width:30px;
+	 height:70px;
+	 float:left;
+	 line-height:70px;
+	 text-align:center;
+}
+.calendar td .right {
+	 width:70px;
+	 height:70px;
+	 margin-left:30px;
+	 font-size:13px;
+}
+.calendar .div1 
+{
+	width:70px; 
+	height:70px;
+	line-height:70px; 
+	text-align:center;
+}
+.calendar .div2 
+{
+	width:70px; 
+	height:35px; 
+	line-height:35px; 
+	text-align:center;
+}

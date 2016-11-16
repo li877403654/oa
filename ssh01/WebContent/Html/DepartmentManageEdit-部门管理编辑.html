@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title>
+<link href="../css/dialog.css" rel="stylesheet" type="text/css" />
+<link href="../css/common.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.4.1.js" type="text/javascript"></script>
+<script src=".//js/SVSE.UI.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="DepartmentEdit.aspx?type=add&amp;0.44272478556230926" id="aspnetForm">
+        
+	<table width="80%" align="center">
+		<tr>
+			<td class="tdLeft"><span class="required">*</span>部门名称：</td>
+			<td class="tdRight">
+				<input name="ctl00$ContentPlaceHolder1$txtDeptName" type="text" id="ctl00_ContentPlaceHolder1_txtDeptName" />
+			</td>
+		</tr>
+		<tr>
+			<td class="tdLeft">主管：</td>
+			<td class="tdRight">
+				<select name="ctl00$ContentPlaceHolder1$ddlManager" id="ctl00_ContentPlaceHolder1_ddlManager">
+	<option value="">请选择</option>
+	<option value="1005                ">龚浩</option>
+	<option value="1030                ">王艳</option>
+	<option value="3009                ">王鹏</option>
+	<option value="3026                ">钱欢</option>
+
+</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="tdLeft">部门说明：</td>
+			<td class="tdRight">
+				<textarea name="ctl00$ContentPlaceHolder1$txtDeptInfo" rows="2" cols="20" id="ctl00_ContentPlaceHolder1_txtDeptInfo"></textarea>
+			</td>
+		</tr>
+	</table>
+	<div class="centerDiv">
+		<input type="submit" name="ctl00$ContentPlaceHolder1$btnSave" value="保存" onclick="return save();" id="ctl00_ContentPlaceHolder1_btnSave" class="btn" />
+		<input type="button" value="取消" class="btn" onclick="parent.dialog.close();" />
+	</div>
+
+    </form>
+</body>
+</html>

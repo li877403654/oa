@@ -1,0 +1,113 @@
+﻿body {
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	scrollbar-face-color: #A4D3EE;
+	scrollbar-arrow-color: #000000;
+}
+/*GridView上方按钮容器div*/
+.gridTopDiv {
+	width:80%;
+	margin:auto;
+}
+/* GridView */
+.grid {
+	width: 80%;
+	margin:auto;
+	border-color: #f0ffff;
+	border-collapse: collapse;
+}
+.grid thead, .grid th {
+	height: 26px;
+	text-align: center;
+	background-image: url(../image/main/grid-head.gif);
+}
+.grid td {
+	height: 26px;
+	text-align: center;
+	border-color: #bbd3eb;
+}
+.dataPagerDiv {
+	width: 320px;
+	margin: 5px auto 5px auto; /*div一定要有宽度，然后设置margin左和右auto即可居中*/
+}
+/* menu */
+.menu {
+	width:260px;
+	margin: auto;
+	position:relative;
+	top:9px;
+}
+.menu div {
+	width: 80px;
+	height: 40px;
+	background-image: url(../image/menu/menu.gif);
+	color: #0d72b2;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	margin-left: 3px;
+}
+.menu div:hover {
+	color: Red;
+}
+/*顶部div*/
+.divTop {
+	background-image: url(../image/main/top.gif);
+	width: 100%;
+	height: 89px;
+	color: White;
+}
+/*个人信息、注销*/
+.divLnk {
+	float:right;
+	margin-right:20px;
+	margin-top:-30px;
+}
+.divLnk a {
+	color:White;
+}
+/*当前位置*/
+.divCurrent {
+	background-image: url(../image/main/currentUrl.gif);
+	width: 100%;
+	height: 24px;
+	padding-left: 10px;
+}
+.divCurrent span {
+	color: #002477;
+	font-weight: bold;
+	margin-left: 5px;
+	position: relative;
+	top: -3px;
+}
+/*主体*/
+.main {
+	margin-top: 5px;
+	border: 1px solid #82d1e7;
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 560px;
+	overflow: auto;
+}
+.mainTitle {
+	height: 28px;
+	background-image: url(../image/main/main-title.gif);
+}
+hr {
+	border:0px;
+	height:1px;
+	background-color:#a7d7ef;
+}
+/*底部div*/
+.divBottom {
+	position: fixed;
+	bottom: 0px;
+	height: 26px;
+	width: 100%;
+	background-image: url(../image/main/bottom.gif);
+	color: White;
+	line-height: 26px;
+	padding-left: 5px;
+}

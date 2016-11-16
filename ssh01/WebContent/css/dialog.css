@@ -1,0 +1,25 @@
+﻿body {
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	scrollbar-face-color: #A4D3EE;
+	scrollbar-arrow-color: #000000;
+}
+.centerDiv {
+	width: 160px;
+	margin: 5px auto 5px auto;
+	text-align: center;
+}
+/*必填字段*/
+.required {
+	color: Red;
+	margin-right: 2px;
+}
+/*文字单元格、控件单元格*/
+.tdLeft {
+	text-align: right;
+	height: 32px;
+}
+.tdRight {
+	text-align: center;
+}

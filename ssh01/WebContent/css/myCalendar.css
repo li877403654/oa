@@ -1,0 +1,94 @@
+﻿.Calendar
+{
+	position:absolute; 
+	z-index:100; 
+	background-color:#c0d0e8; 
+	border:0px dotted #1c6fa5; 
+	width:200px; 
+	font-size:9pt;
+	font-family:Verdana;
+	text-decoration:none;
+	display:none;
+}
+.Calendar table
+{
+	font-family: verdana;
+	text-decoration: none;
+	width: 200px;
+	background-color: #c0d0e8;
+	font-size: 9pt;
+	border:0px dotted #1c6fa5;
+	cursor:default;
+}
+.Calendar input
+{
+	border:1px solid #cccccc;
+	background-color:#efefef;
+	width:50%;
+	height:20px;
+	cursor:pointer;
+	font-size:12px;
+}
+.Calendar .btn
+{
+	font-weight: bold;
+	color: #243F65;
+	cursor:hand;
+	text-decoration: none;
+	width:100%;
+}
+.Calendar select
+{
+	border:1px solid #666666;
+	background-color:#efefef;
+}
+.Calendar .year
+{
+	width:52px;
+}
+.Calendar .month
+{
+	width:48px;
+}
+.Calendar .head
+{
+	font-family: verdana;
+	font-size: 9pt;
+	color: #000000;
+	background-color: #c0d0e8;
+	height: 20px;
+	width:11%;
+	text-align: center;
+}
+.Calendar .sat
+{
+	font-family: verdana;
+	font-size: 7pt;
+	background-color:#e5e9f2;
+	text-align: center;
+	height: 18px;
+	width: 12%;
+	color:#009933;
+	cursor:pointer;
+}
+.Calendar .sun
+{
+	font-family: verdana;
+	font-size: 7pt;
+	background-color:#e5e9f2;
+	text-align: center;
+	height: 18px;
+	width: 12%;
+	color:#ff0000;
+	cursor:pointer;
+}
+.Calendar .normal
+{
+	font-family: verdana;
+	font-size: 7pt;
+	background-color: #e5e9f2;
+	height: 20px;
+	width:11%;
+	text-align: center;
+	cursor:pointer;
+}
